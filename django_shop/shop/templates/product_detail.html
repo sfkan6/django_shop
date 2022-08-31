@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load ratingtags %}
+
+{% block title %}
+    {{ product.title }}
+{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/product_detail.css' %}"/>
+    <div class="col-md-12">
+        <h2>{{ product.title }} </h2>
+        <img src="{{ product.image.url }}" class="img-product-detail">
+        <p>{{ product.description }}</p>
+        <p>{{ product.price }}</p>
+        {% include 'add_to_cart.html' %}
+    </div>
+    <hr class="index-hr">
+    <form action="{{ product.get_absolute_url }}" method="post" class="form-review">{% csrf_token %}
+        {{ form.name }}
+        {{ form.rating }}
+        <p>{{ form.review }}</p>
+        <input id="btn" type="submit" value="Отправить">
+    </form>
+
+    {% if product.reviews %}
+    <div class="reviews">
+        {% for review in product.reviews.get_queryset %}
+            <hr>
+            <p>{{ review.rating|rating_star }}</p>
+            <span>{{ review.name }}</span>
+            <p>{{ review.review }}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+{% endblock %}

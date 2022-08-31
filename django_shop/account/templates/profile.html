@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Профиль{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/profile.css' %}"/>
+    <div class="user-data">
+        <img class="user-img" src="{{ user.image.url }}">
+        <div>
+            <h3>Информация профиля</h3>
+            <form action="{% url 'profile' pk=user.id %}" method="post" enctype="multipart/form-data">{% csrf_token %}
+                {{ form.as_p }}
+                <button class="button-update">Сохранить</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

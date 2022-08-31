@@ -1,0 +1,35 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin: 5vh 5vw;
+}
+
+.img-product {
+    width: 300px;
+    border-radius: 20px;
+}
+
+A:link {
+    text-decoration: none;
+}
+
+A {
+    color: #545454;
+}
+
+.add_to_cart {
+    font-size: 1.8vh;
+    padding: 15px 20px;
+    border-radius: 25px;
+    border: 0;
+}
+
+input:hover, button:hover {
+    background-color: #D8D8D8;
+    cursor: pointer;
+}
+

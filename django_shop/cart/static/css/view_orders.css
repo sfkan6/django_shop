@@ -1,0 +1,12 @@
+
+.product_in_order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vh 4vw;
+    font-size: 1.8vh;
+}
+
+.order {
+    margin: 1vw;
+}

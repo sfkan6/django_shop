@@ -1,0 +1,52 @@
+
+#rating {
+    display: flex;
+}
+
+#btn {
+    font-size: 1.8vh;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+.img-product-detail {
+    width: 450px;
+    border-radius: 30px;
+}
+
+.form-name {
+    padding: 5px 10px;
+    height: 3vh;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 18px;
+    width: 300px;
+}
+
+.form-name:hover {
+    cursor: text;
+    background-color: #ECECEC;
+}
+
+.form-text {
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    min-width: 30vw;
+    min-height: 15vh;
+    max-width: 87vw;
+    max-height: 40vh;
+    font-size: 18px;
+}
+.form-text:hover {
+    background-color: #ECECEC;
+}
+
+hr {
+    margin: 4vh 0;
+}
+
+.index-hr {
+    margin: 10vh 0;
+}

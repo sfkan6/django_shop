@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Заказы{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/view_orders.css' %}"/>
+
+    <div>
+        {% include 'cart-menu.html' %}
+        <div class="view-order">
+            {% if not orders %}
+            <div>
+                <h4>Заказов нет</h4>
+            </div>
+            {% else %}
+            <div>
+                <h3>
+                    <span>Ваши Заказы</span>
+                    <span>{{ orders|length }}</span>
+                </h3>
+                <div>
+                    {% for order in orders.values %}
+                        <div class="order">
+                            <hr/>
+                            {{ order.created }}
+                            <h4>{{ order.cost }}</h4>
+                            <hr/>
+                            {% for product in order.products %}
+                                <div class="product_in_order">
+                                    <h4>{{ product.product.title}}</h4>
+                                    <span>{{ product.product.description|truncatechars:20 }}</span>
+                                    <h4>{{ product.quantity }}</h4>
+                                    <span>{{ product.product.price }}</span>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+
+.categories {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.category {
+    margin: 1vh 2vw;
+}
+
+.one-category {
+    font-size: 2vh;
+    font-weight: bold;
+    padding: 2vh 3vw;
+    border-radius: 30px;
+    border: 0;
+}

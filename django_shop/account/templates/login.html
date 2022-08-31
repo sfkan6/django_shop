@@ -1,0 +1,39 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вход</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/auth.css' %}"/>
+    <link rel="shortcut icon" href="{% static 'img/logo.svg' %}">
+</head>
+<body>
+    <main>
+        {% include 'messages.html' %}
+        <style type="text/css">
+            .messages {
+                position: absolute;
+                top: 30%;
+                left: 0;
+                right: 0;
+                text-align: center;
+                font-size: 2vh;
+            }
+        </style>
+
+        <div class="container">
+            <div class="form-container">
+                <form action="{% url 'auth' %}" method="post">{% csrf_token %}
+                    <p id="email">{{ form.email }}</p>
+                    <p id="pass">{{ form.password }}</p>
+                    <input id="btn" type="submit" value="Войти">
+                    <p><a href="{% url 'signup' %}">Зарегистрироваться</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

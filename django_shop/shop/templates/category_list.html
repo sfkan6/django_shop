@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ category.name }}
+{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/category_list.css' %}"/>
+
+    {% if category_list %}
+        <h1>{{ category.name }}</h1>
+        <div class="categories">
+            {% for child in page_obj %}
+            <div class="category">
+                <a href="{{ child.get_absolute_url }}">
+                    <button class="one-category">{{ child.name }}</button>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="alert alert-dark" role="alert">
+            Тут пока ничего нет!
+        </div>
+    {% endif %}
+{% endblock %}

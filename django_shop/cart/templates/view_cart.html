@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Корзина{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/view_cart.css' %}"/>
+
+    <div>
+        {% include 'cart-menu.html' %}
+        <div class="view-cart">
+            {% if not cart %}
+            <div>
+                <h4>В корзине пока что нет товаров</h4>
+            </div>
+            {% else %}
+            <div>
+                <h4>
+                    <span>Ваша корзина: </span>
+                    <span>{{ cart|length }}</span>
+                </h4>
+                <div>
+                    <ul>
+                        {% if cart.values %}
+                            <input type="checkbox" class="index-check" onclick="selectAll(this)">
+                        {% endif %}
+                        {% for product in cart.values %}
+                            <li class="product">
+                                <input type="checkbox" data-id="{{ product.id }}" class="check" onclick="orderSum(this)">
+                                <div class="description">
+                                    <h4><a href="{{ product.product.get_absolute_url}}" class="title">{{ product.product.title}}</a></h4>
+                                    <small>{{ product.product.description|truncatechars:20 }}</small>
+                                </div>
+                                <div>
+                                    <button class="decrement"  data-id="{{ product.id }}" type="button">-</button>
+                                    <span class="quantity">{{ product.quantity }}</span>
+                                    <button class="increment"  data-id="{{ product.id }}" type="button">+</button>
+                                </div>
+                                <div class="price">{{ product.product.price }}</div>
+                                <button class="remove" data-id="{{ product.id }}" type="button">remove</button>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <hr>
+                    <div>
+                        <p>
+                            <h2>Сумма заказа:</h2>
+                            <span class="order_price">0</span>
+                        </p>
+                        <form action="order/" method="post"> {% csrf_token %}
+                            <input type="button" class="make-order" onclick="makeOrder(this)" value="Заказать">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+    </div>
+
+    <script src="{% static 'js/view_cart.js' %}"></script>
+{% endblock %}

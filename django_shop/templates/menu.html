@@ -1,0 +1,29 @@
+{% load static %}
+
+<nav class="nav">
+    <div class="nav_menu">
+        <img src="{% static 'img/nav.svg' %}" alt="Меню" width="48" height="48">
+        <div class="navigator">
+            {% include 'catalog_menu.html' %}
+        </div>
+    </div>
+    <a class='navbar-brand' href="{% url 'home' %}">
+    <div class="logo">
+        <img src="{% static 'img/logo.svg' %}" alt="" width="72" height="72">
+        <h1>Modern Shop</h1>
+    </div>
+    </a>
+    <div class="user_func">
+        {% if user.is_authenticated %}
+            <div><a href="{% url 'profile' pk=user.id %}"><img class="user-image" src="{{ user.image.url }}"> {{ user.get_username }}</a></div>
+        {% endif %}
+
+        <a role="button" href="{% url 'cart' %}">Корзина</a>
+
+        {% if user.is_authenticated %}
+            <a role="button" href="{% url 'logout'%}">Выйти</a>
+        {% else %}
+            <a role="button" href="{% url 'auth'%}">Войти</a>
+        {% endif %}
+    </div>
+</nav>

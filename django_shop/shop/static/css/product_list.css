@@ -1,0 +1,12 @@
+
+.products {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.product {
+    margin: 1vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,11 @@
+.cart-menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart-menu-button {
+    font-size: 20px;
+    border: 0;
+    border-radius: 30px;
+    padding: 10px 40px;
+}

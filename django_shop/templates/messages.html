@@ -1,0 +1,18 @@
+
+<style type="text/css">
+.messages {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 2vh;
+}
+</style>
+
+{% if messages %}
+    <div class="messages">
+    {% for message in messages %}
+        {{ message }}
+    {% endfor %}
+    </div>
+{% endif %}

@@ -1,0 +1,12 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/cart-menu.css' %}"/>
+
+<div class="cart-menu">
+    <a href="{% url 'cart' %}">
+        <button class="cart-menu-button">Корзина</button>
+    </a>
+    <a href="{% url 'orders' %}">
+        <button class="cart-menu-button">Заказы</button>
+    </a>
+</div>

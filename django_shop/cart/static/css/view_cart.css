@@ -1,0 +1,28 @@
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 2vh;
+}
+
+li.product div{
+    margin: 1vh 8vw;
+}
+
+input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+}
+
+.remove, .make-order{
+    font-size: 1.8vh;
+    padding: 0.8vh 1vw;
+    border-radius: 20px;
+    border: 1px solid #5A5A5A;
+    background-color: #EFEFEF;
+}
+
+.title {
+    color: black;
+}

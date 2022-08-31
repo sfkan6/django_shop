@@ -1,0 +1,53 @@
+
+.user-image{
+    width: 45px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: #EEEEEE;
+    min-height: 8vh;
+    padding: 0.6vh 2vw;
+    position: sticky;
+    top: 0;
+}
+
+.nav_menu:hover .navigator{
+    display: block;
+}
+
+.navigator {
+    display: none;
+    position: absolute;
+    top: 6.1vh;
+    background-color: #E0E0E0;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 1.9vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.user_func{
+    right: 0;
+}
+
+ul.root {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+ul.children {
+    padding-left: 40px;
+    list-style: disc;
+}
