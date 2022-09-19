@@ -4,6 +4,11 @@
 VENV = venv
 
 
+migrate: ## Make migrations
+	. $(VENV)/bin/activate
+	cd django_shop
+	python manage.py migrate
+
 load: ## database loading
 	. $(VENV)/bin/activate
 	cd django_shop
@@ -26,6 +31,7 @@ run: ## Run djnago
 fast-run: ## Quick launch
 	python -m venv $(VENV)
 	@make deps
+	@make migrate
 	@make load
 	@make run	
 
