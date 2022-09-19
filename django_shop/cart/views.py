@@ -21,7 +21,6 @@ class CartListView(ListView):
         return cart
 
 
-
 class OrdersListView(ListView):
     context_object_name = "orders"
     template_name = 'view_orders.html'

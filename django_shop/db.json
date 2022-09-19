@@ -416,6 +416,266 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2022-08-07T14:46:42.893Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "7",
+        "object_repr": "Столы",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2022-08-13T13:37:56.977Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Корзина admin@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"deleted\": {\"name\": \"product in cart\", \"object\": \"ProductInCart object (None)\"}}, {\"deleted\": {\"name\": \"product in cart\", \"object\": \"ProductInCart object (None)\"}}, {\"deleted\": {\"name\": \"product in cart\", \"object\": \"ProductInCart object (None)\"}}, {\"deleted\": {\"name\": \"product in cart\", \"object\": \"ProductInCart object (None)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2022-09-19T14:13:41.792Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "5",
+        "object_repr": "лобилоб",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2022-09-19T14:13:41.807Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "gfdhdfgh",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2022-09-19T14:13:53.847Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "Петр",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2022-09-19T14:13:53.861Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Антон",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2022-09-19T14:13:53.868Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Антон",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2022-09-19T14:52:01.698Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "4",
+        "object_repr": "test@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2022-09-19T14:52:14.712Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "admin@gmail.com - 2022-08-13 13:47:52.887000+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2022-09-19T14:52:14.727Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "admin@gmail.com - 2022-08-14 08:30:48.160000+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2022-09-19T14:52:14.733Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "admin@gmail.com - 2022-08-14 10:14:10.730000+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2022-09-19T14:52:14.740Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "admin@gmail.com - 2022-08-14 17:17:13.448000+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2022-09-19T14:52:14.746Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "11",
+        "object_repr": "admin@gmail.com - 2022-08-19 07:41:33.200000+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2022-09-19T14:59:39.612Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "6",
+        "object_repr": "Бензопила Калибр",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2022-09-19T15:06:43.011Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "5",
+        "object_repr": "Бензопила Парма Практик",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2022-09-19T15:07:09.915Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "4",
+        "object_repr": "Бензопила Carver HOBBY",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2022-09-19T15:08:29.555Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "Молоко Деревенское",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2022-09-19T15:08:59.388Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Молоко Простоквашино",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2022-09-19T15:09:24.976Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "Молоко Белый город",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2022-09-19T15:28:48.030Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "7",
+        "object_repr": "Бензопила Huter",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
     "model": "auth.permission",
     "pk": 1,
     "fields": {
@@ -1033,6 +1293,22 @@
 },
 {
     "model": "sessions.session",
+    "pk": "5axfx8qed6cdyy3635is8yon3t0b8aj4",
+    "fields": {
+        "session_data": ".eJxVjDkOgzAUBe_iOrK84GAo03MG9Bf_QBKBZEOFuHtAokjaN_NmUz2sy9CvJeV-ZNUqq26_GwK903QCfsH0nDXN05JH1KeiL1p0N3P6PC73LzBAGY43NAa9obqhJA7AYrJCsa6kYhuDM46h8l5M5FQHBg6h4ehJnCCikfsRJciLard9_wJIrTwy:1oOwpl:8c_EGBi1TCZBv-0MNNcspXte0-hMvzigd2ex-4qw_eM",
+        "expire_date": "2022-09-02T07:54:25.841Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ej4m5uso7pspi4oylfy786jrm0izvmyx",
+    "fields": {
+        "session_data": ".eJxVjDkOg0AQBP8ysbXa0yyEzv0GNMeOwbZA4ogQf7eRSEi7qnoDxmmBZttv0OK6dO06l6ntBRpwcNkI-VOGA8gbh9doeByWqSdzKOaks3mOUr6P070cdDh3_xprS8FyVXNRj-ioOOVcRY3icvLWC8YQ1GYpVRKUlGrJgdUrEVm9w_4DSCs8Mg:1oaHZk:9JwUMGoNm2xDF1qROwcf-JGWlBtW2YYco-TaI8iaHmM",
+        "expire_date": "2022-10-03T14:16:44.644Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "hv82bhb2xjwcsx6t23hkp4ez2oc9a3q4",
     "fields": {
         "session_data": ".eJxVjDsOwjAQBe_iGln-YpuSPmewdr1eHECJFCcV4u4QKQW0b2beS2TY1pa3Xpc8krgILU6_G0J51GkHdIfpNssyT-syotwVedAuh5nq83q4fwcNevvWkBRaVUIqlQ2Axqq5xODYkY7eKEPgrGUVqQZPQN4nirawYURUfBbvDwDnOOY:1oJ8LX:ElRw7EWMKcaxFk6uDIpXz6I7Jh88QhWPp7qlsTcjDnU",
@@ -1040,11 +1316,35 @@
     }
 },
 {
+    "model": "sessions.session",
+    "pk": "i882fnbtevjs0g2cdxg1ddvo60hpaaxf",
+    "fields": {
+        "session_data": "eyJjYXJ0Ijp7IjIiOnsicXVhbnRpdHkiOjR9fX0:1oN92B:mcNUwufZCHP79yzvV21PgBEngXnZw8a1el693xXIQqA",
+        "expire_date": "2022-08-28T08:31:47.971Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jx8asaxegq6wtono68m3imcookjkec79",
+    "fields": {
+        "session_data": ".eJxVjDkOgzAUBe_iOrK84GAo03MG9Bf_QBKBZEOFuHtAokjaN_NmUz2sy9CvJeV-ZNUqq26_GwK903QCfsH0nDXN05JH1KeiL1p0N3P6PC73LzBAGY43NAa9obqhJA7AYrJCsa6kYhuDM46h8l5M5FQHBg6h4ehJnCCikfsRJciLard9_wJIrTwy:1oaIdY:-hwAqhu4_LSpaJ8PYFW1JvLJ1ufhAOq99SESgaPt0Fg",
+        "expire_date": "2022-10-03T15:24:44.439Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "vqwi2aeif365tavgry0nssuy00da5n76",
+    "fields": {
+        "session_data": ".eJxVjDkOg0AQBP8ysbXa0yyEzv0GNMeOwbZA4ogQf7eRSEi7qnoDxmmBZttv0OK6dO06l6ntBRpwcNkI-VOGA8gbh9doeByWqSdzKOaks3mOUr6P070cdDh3_xprS8FyVXNRj-ioOOVcRY3icvLWC8YQ1GYpVRKUlGrJgdUrEVm9w_4DSCs8Mg:1oJYBO:Aew_6x90957h1ckkT3rGE7up0HC0KI38Fyqy7IiEkY4",
+        "expire_date": "2022-08-18T10:34:26.651Z"
+    }
+},
+{
     "model": "account.user",
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$320000$Uo63uJyIS5q0VoEQ4ElDhO$GCXP9+hlNpzWRHg9jQrpNSq6Qjeio/uf8kLx6xXZPvc=",
-        "last_login": "2022-08-03T06:59:11.967Z",
+        "last_login": "2022-09-19T14:51:54.675Z",
         "is_superuser": true,
         "first_name": "",
         "last_name": "",
@@ -1064,6 +1364,67 @@
     "pk": 4,
     "fields": {
         "user": 1
+    }
+},
+{
+    "model": "cart.productincart",
+    "pk": 42,
+    "fields": {
+        "cart": 4,
+        "product": 1,
+        "quantity": 1
+    }
+},
+{
+    "model": "cart.productincart",
+    "pk": 43,
+    "fields": {
+        "cart": 4,
+        "product": 2,
+        "quantity": 3
+    }
+},
+{
+    "model": "cart.productincart",
+    "pk": 44,
+    "fields": {
+        "cart": 4,
+        "product": 3,
+        "quantity": 1
+    }
+},
+{
+    "model": "cart.order",
+    "pk": 5,
+    "fields": {
+        "customer": 1,
+        "created": "2022-08-13T13:47:32.219Z"
+    }
+},
+{
+    "model": "cart.order",
+    "pk": 6,
+    "fields": {
+        "customer": 1,
+        "created": "2022-08-13T13:47:39.947Z"
+    }
+},
+{
+    "model": "cart.productinorder",
+    "pk": 10,
+    "fields": {
+        "order": 5,
+        "product": 2,
+        "quantity": 3
+    }
+},
+{
+    "model": "cart.productinorder",
+    "pk": 11,
+    "fields": {
+        "order": 6,
+        "product": 3,
+        "quantity": 5
     }
 },
 {
@@ -1145,12 +1506,25 @@
     }
 },
 {
+    "model": "shop.category",
+    "pk": 7,
+    "fields": {
+        "name": "Столы",
+        "slug": "tables",
+        "parent": 3,
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
     "model": "shop.product",
     "pk": 1,
     "fields": {
         "category": 5,
-        "title": "Молоко 1",
-        "description": "Молоко 1",
+        "title": "Молоко Белый город",
+        "description": "Молоко Белый Город ультрапастеризованное 3.2% 1 л — это прекрасное, нормализованное по жирности молоко, приготовленное из высококачественного, свежего сырья. Оно обладает насыщенным, приятным вкусом со сливочными нотками и сладким послевкусием. Современные технологии ультрапастеризации позволяют сохранить пользу и вкус природного напитка для полноценного питания больших и маленьких поклонников молока.",
         "image": "products/1.webp",
         "price": "130.00",
         "slug": "moloko-1"
@@ -1161,8 +1535,8 @@
     "pk": 2,
     "fields": {
         "category": 5,
-        "title": "Молоко 2",
-        "description": "Молоко 2",
+        "title": "Молоко Простоквашино",
+        "description": "Простоквашино заботится о каждой семье! Даже при непереносимости лактозы теперь можно пить молоко от любимого бренда и чувствовать себя легко и комфортно.  Безлактозное молоко Простоквашино - такое же как обычное молоко, только БЕЗ лактозы. Молоко обладает приятным сладковатым вкусом, отлично подойдет к чаю или кофе, для готовки, а также чтобы просто пить.",
         "image": "products/2.webp",
         "price": "200.00",
         "slug": "moloko-2"
@@ -1173,8 +1547,8 @@
     "pk": 3,
     "fields": {
         "category": 5,
-        "title": "Молоко 3",
-        "description": "Молоко 3",
+        "title": "Молоко Деревенское",
+        "description": "Молоко «Деревенское» – 100% натуральный продукт, приготовленный по традиционным рецептам.\r\n«Домик в деревне»  - все, что мы узнали о натуральности, мы узнали от бабушек.\r\n●100% натуральное молоко. Без добавления консервантов и красителей.\r\n●Жирность 2,5% подходит для тех, кто любит традиционный вкус молока\r\n●Пить молоко «Домик в деревне» можно холодным и тёплым.\r\n●Идеально для кофе, чая и приготовления ваших любимых блюд",
         "image": "products/3.webp",
         "price": "100.00",
         "slug": "moloko-3"
@@ -1185,8 +1559,8 @@
     "pk": 4,
     "fields": {
         "category": 6,
-        "title": "Пила 1",
-        "description": "Пила 1",
+        "title": "Бензопила Carver HOBBY",
+        "description": "Бензопила Carver HOBBY HSG 145-15 станет незаменимой помощницей при валке деревьев, заготовке дров, распиливании древесины в бытовом использовании. Мощный двигатель на 1800 Вт обеспечивает высокую эффективность. Пила оснащена топливным баком объемом 390 мл и масляным баком на 160 мл.\r\nБензопила Carver HOBBY HSG 145-15 получила 15-дюймовую шину с направляющей звездочкой и цепь с 64 режущими зубьями для достижения быстрого и качественного распила. Система автоматической смазки цепи позволяет продлить срок службы компонентов пилы. Широкая эргономичная рукоятка помогает удобно удерживать инструмент. А быстрое торможение двигателя при отключении и технология защиты от случайного запуска гарантируют безопасность в эксплуатации пилы.",
         "image": "products/4.webp",
         "price": "12000.00",
         "slug": "pila-1"
@@ -1197,8 +1571,8 @@
     "pk": 5,
     "fields": {
         "category": 6,
-        "title": "Пила 2",
-        "description": "Пила 2",
+        "title": "Бензопила Парма Практик",
+        "description": "Бензопила ПАРМА Практик БП 045/15 с двигателем мощностью 1800 Вт станет надежной помощницей для распила древесины и заготовки дров. Она оборудована направляющей шиной длиной 38 см и цепью с 64 звеньями, предусматривающей инструментальное натяжение. Корпус из прочных материалов устойчив к низким температурам и других неблагоприятным воздействиям. Многоточечная антивибрационная система, эргономичная рукоятка и распределение нагрузки повышают уровень комфорта в эксплуатации инструмента ПАРМА Практик БП 045/15. Система легкого запуска упрощает включение. Регулируемая система смазки цепи помогает продлить ресурс службы режущей оснастки.",
         "image": "products/5.webp",
         "price": "7000.00",
         "slug": "pila-2"
@@ -1209,11 +1583,73 @@
     "pk": 6,
     "fields": {
         "category": 6,
-        "title": "Пила 3",
-        "description": "Пила 3",
+        "title": "Бензопила Калибр",
+        "description": "Бензопила Калибр БП-1800/16У подойдет для выполнения различных работ. Возможные варианты применения – валка деревьев, распиливание на бревна и т. д. Бензопила способна покрыть основные запросы владельцев.\r\nМодель Калибр БП-1800/16У оснащается мощным двигателем на 2.45 л. с. Объем мотора составляет 45 см³. Он обеспечивает надежность бензопилы и высокую производительность при эксплуатации.\r\nВ конструкции установлен топливный бак с емкостью 550 мл. В него можно залить достаточно бензина для последующего выполнения работ. Предусмотрен отдельный бак для масла на 260 мл. Во время работы смазывающая жидкость подается на цепь. Она снижает силу трения и предотвращает быстрый износ компонентов.\r\nРеализована защита от случайного запуска. За счет этого повышается безопасность при эксплуатации бензопилы. Присутствует система антивибрации. Она поглощает механические воздействия и повышает комфортность работы с инструментом.",
         "image": "products/6.webp",
         "price": "6000.00",
         "slug": "pila-3"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 7,
+    "fields": {
+        "category": 6,
+        "title": "Бензопила Huter",
+        "description": "Бензопила Huter BS-52 70/6/3 оборудована 50-сантиметровой пильной шиной. Мощность двигателя - 3.4 л.с. Для снижения негативного воздействия на суставы оператора предусмотрена система гашения вибраций. Смазка цепи происходит автоматически.\r\nДанная информация скопирована со страницы: https://www.vseinstrumenti.ru/sadovaya_tehnika/benzopily/huter/bs-52/",
+        "image": "products/51152901.jpg",
+        "price": "6500.00",
+        "slug": "benzopila-huter"
+    }
+},
+{
+    "model": "shop.review",
+    "pk": 6,
+    "fields": {
+        "product": 2,
+        "name": "Иван",
+        "rating": 5,
+        "review": "Прекрасное молоко."
+    }
+},
+{
+    "model": "shop.review",
+    "pk": 7,
+    "fields": {
+        "product": 2,
+        "name": "Светлана",
+        "rating": 4,
+        "review": "Невкусное!"
+    }
+},
+{
+    "model": "shop.review",
+    "pk": 8,
+    "fields": {
+        "product": 5,
+        "name": "Артём",
+        "rating": 4,
+        "review": "Хорошо пилит!"
+    }
+},
+{
+    "model": "shop.review",
+    "pk": 9,
+    "fields": {
+        "product": 1,
+        "name": "Александр",
+        "rating": 3,
+        "review": "Молоко 2 лучше"
+    }
+},
+{
+    "model": "shop.review",
+    "pk": 10,
+    "fields": {
+        "product": 3,
+        "name": "Николай",
+        "rating": 4,
+        "review": "Пила 2 классная, молоко скисло."
     }
 },
 {

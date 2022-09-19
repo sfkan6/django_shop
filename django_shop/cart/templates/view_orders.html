@@ -29,7 +29,7 @@
                             {% for product in order.products %}
                                 <div class="product_in_order">
                                     <h4>{{ product.product.title}}</h4>
-                                    <span>{{ product.product.description|truncatechars:20 }}</span>
+                                    <span>{{ product.product.description|truncatechars:60 }}</span>
                                     <h4>{{ product.quantity }}</h4>
                                     <span>{{ product.product.price }}</span>
                                 </div>

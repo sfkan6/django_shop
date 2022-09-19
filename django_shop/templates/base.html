@@ -15,13 +15,16 @@
     <link rel="shortcut icon" href="{% static 'img/logo.svg' %}">
 </head>
 <body>
-    {% include 'menu.html' %}
-    {% include 'messages.html' %}
-    <div class="content">
-        {% block content %}{% endblock %}
+    <div class="main">
+        {% include 'menu.html' %}
+        {% include 'messages.html' %}
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+    
+        <hr>
+        {% include 'footer.html' %}
     </div>
-
-    <hr>
-    {% include 'footer.html' %}
+    <script src="{% static 'js/view_catalog.js' %}"></script>
 </body>
 </html>

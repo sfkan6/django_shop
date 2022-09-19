@@ -1,8 +1,9 @@
-asgiref @ file:///home/sensei/.cache/pypoetry/artifacts/22/46/4d/e9d170f76cad59b81e4568f6b37cce88f46df63c197e476a1020862182/asgiref-3.5.2-py3-none-any.whl
-Django @ file:///home/sensei/.cache/pypoetry/artifacts/48/55/c3/0713efa3f112051fff9e2700ad4144cf5339e0396feb53331a26f384b3/Django-4.0.6-py3-none-any.whl
-django-js-asset @ file:///home/sensei/.cache/pypoetry/artifacts/89/7b/2e/4bc5e4e46aa21b254037f77389227637b1a5f221ad3e5f3ff34d4436f7/django_js_asset-2.0.0-py3-none-any.whl
-django-mptt @ file:///home/sensei/.cache/pypoetry/artifacts/13/db/93/fab46c2fb0db8b8059255c28b78340b3654cce8a32843289aeb59d673a/django_mptt-0.13.4-py3-none-any.whl
-django-phonenumber-field==6.3.0
-phonenumberslite==8.12.52
-Pillow @ file:///home/sensei/.cache/pypoetry/artifacts/95/cd/1a/99053885d95d74defc6d40d0bd7518f83fd74b133dfd762dfb523db565/Pillow-9.2.0-cp310-cp310-manylinux_2_28_x86_64.whl
-sqlparse @ file:///home/sensei/.cache/pypoetry/artifacts/10/f5/22/c9c991a71e27c4d8f69907d92cce74a369cbb3183dc4a6d27e2ae4ab0b/sqlparse-0.4.2-py3-none-any.whl
+asgiref==3.5.2; python_version >= "3.8"
+django-js-asset==2.0.0; python_version >= "3.6"
+django-mptt==0.13.4; python_version >= "3.6"
+django-phonenumber-field==6.3.0; python_version >= "3.7"
+django==4.0.6; python_version >= "3.8"
+phonenumberslite==8.12.52; python_version >= "3.7"
+pillow==9.2.0; python_version >= "3.7"
+sqlparse==0.4.2; python_version >= "3.8"
+tzdata==2022.1; sys_platform == "win32" and python_version >= "3.8"

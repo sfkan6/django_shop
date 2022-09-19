@@ -11,11 +11,15 @@
     <div class="col-md-12">
         <h2>{{ product.title }} </h2>
         <img src="{{ product.image.url }}" class="img-product-detail">
-        <p>{{ product.description }}</p>
+        <h4>Описание</h4>
+        <p class="description">{{ product.description }}</p>
+        <h4>Цена</h4>
         <p>{{ product.price }}</p>
         {% include 'add_to_cart.html' %}
     </div>
     <hr class="index-hr">
+    <h4>Отзывы</h4>
+
     <form action="{{ product.get_absolute_url }}" method="post" class="form-review">{% csrf_token %}
         {{ form.name }}
         {{ form.rating }}

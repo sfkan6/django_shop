@@ -39,6 +39,12 @@
     max-height: 40vh;
     font-size: 18px;
 }
+
+.description{
+    padding: 0 30px;
+
+}
+
 .form-text:hover {
     background-color: #ECECEC;
 }

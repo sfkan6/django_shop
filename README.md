@@ -1,32 +1,46 @@
 # Интерент-магазин на Django
 
-## Установка
+## [Docker](https://docs.docker.com/get-docker/):
 
-### Docker:
+1. Создайте и запустите контейнер:
+```sh
+make docker
+```
 
-1. Если у вас не установлен Docker: Установите [Docker](https://docs.docker.com/get-docker/).
+<details>
+<summary>Запуск вручную</summary>
 
-2. Создайте контейнер:
+1. Создайте контейнер:
 ```sh
 docker build -t shop .
 ```
 
-3. Запустите контейнер:
+2. Запустите контейнер:
 ```sh
 docker run --rm -p 8000:8000 -it shop
 ```
 
-### Простая установка:
+</details>
+
+## Установка:
 
 1. Клонировать репозиторий и перейти в него в командной строке:
 ```sh
-git clone https://https://github.com/sfkan6/django_shop.git
+git clone https://github.com/sfkan6/django_shop.git
 ```
 ```sh
 cd django_shop
 ```
 
-2. Cоздать и активировать виртуальное окружение:
+2. Выполните в консоли:
+```sh
+make fast-run
+```
+
+<details>
+<summary>Запуск вручную</summary>
+
+1. Войдите в виртуальное окружение:
 ```sh
 python -m venv venv
 ```
@@ -39,29 +53,41 @@ source venv/Scripts/activate
 source venv/bin/activate
 ```
 
-3. Установите зависимости:
+2. Установите зависимости:
 ```sh
-python pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
-4. Выполните миграции:
+3. Выполните миграции:
 ```sh
 python manage.py migrate
 ```
 
-5. Загрузите тестовые данные в базу:
+4. Загрузите данные в базу данных:
  ```sh
- python manage.py loaddata fixtures.json
+ python manage.py loaddata db.json
  ```
 
-6. Запустите тестовый сервер:
+5. Запустите:
   ```sh
- python manage.py runserver
+ python manage.py runserver 0.0.0.0:8000
  ```
+ 
+</details>
 
-7. Перейдите по ссылке: (http://127.0.0.1:8000)
+Перейдите по ссылке: (http://0.0.0.0:8000)
 
-#### Тестовый суперпользователь:
+### Админ:
 
 Логин: admin@gmail.ru
 Пароль: admin
+
+<hr>
+
+![home](demo/home.png)
+
+--------
+![cart](demo/cart.png)
+
+--------
+![nav-menu](demo/nav-menu.png)

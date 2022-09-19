@@ -19,17 +19,12 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-# адинка,
-# пользователь,
-# корзина пользователя,
-# товары
-# Подборки товаров
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('auth/', include('account.urls')),
-    path('cart/', include('cart.urls')),
-    path('shop/', include(('shop.urls', 'shop'), namespace='shop')),
-    path('', include('article.urls')),
+    path('admin/', admin.site.urls),        # admin
+    path('auth/', include('account.urls')), # user
+    path('cart/', include('cart.urls')),    # cart
+    path('shop/', include(('shop.urls', 'shop'), namespace='shop')), # shop
+    path('', include('article.urls')),      # selections on home page
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

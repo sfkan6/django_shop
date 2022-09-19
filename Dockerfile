@@ -10,16 +10,16 @@ ENV DJANGO_ENV=${DJANGO_ENV} \
   POETRY_VERSION=1.0.3 \
   POETRY_CACHE_DIR='/var/cache/pypoetry'
 
-# set work directory
-WORKDIR /code
-COPY pyproject.toml poetry.lock /code/
 
+# copy project and set work directory
+COPY . /code/
+WORKDIR /code
+
+# Install requirements
 RUN pip install "poetry==$POETRY_VERSION" \
 && poetry config virtualenvs.create false \
 && poetry install --no-interaction --no-ansi
 
-# copy project
-COPY . /code/
 
 RUN chmod +x ./docker-entrypoint.sh
 ENTRYPOINT ["./docker-entrypoint.sh"]

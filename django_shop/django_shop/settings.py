@@ -110,6 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# user model
 AUTH_USER_MODEL = 'account.User'
 
 CART_SESSION_ID = 'cart'

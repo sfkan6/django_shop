@@ -1,7 +1,6 @@
 from .models import Product
 
 
-
 def review_create(form, product_review):
     if form.is_valid():
         new_review = form.save(commit=False)
