@@ -1,8 +1,18 @@
 # Интерент-магазин на Django
 
-## [Docker](https://docs.docker.com/get-docker/):
+## Установка:
 
-1. Создайте и запустите контейнер:
+1. Клонировать репозиторий и перейти в него в командной строке:
+```sh
+git clone https://github.com/sfkan6/django_shop.git
+```
+```sh
+cd django_shop
+```
+
+### [Docker](https://docs.docker.com/get-docker/):
+
+Создайте и запустите контейнер:
 ```sh
 make docker
 ```
@@ -22,17 +32,9 @@ docker run --rm -p 8000:8000 -it shop
 
 </details>
 
-## Установка:
+### Запуск:
 
-1. Клонировать репозиторий и перейти в него в командной строке:
-```sh
-git clone https://github.com/sfkan6/django_shop.git
-```
-```sh
-cd django_shop
-```
-
-2. Выполните в консоли:
+Выполните в консоли:
 ```sh
 make fast-run
 ```
@@ -58,17 +60,22 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-3. Выполните миграции:
+3. Перейдите в папку проекта:
+```sh
+cd django_shop
+```
+
+4. Выполните миграции:
 ```sh
 python manage.py migrate
 ```
 
-4. Загрузите данные в базу данных:
+5. Загрузите данные в базу данных:
  ```sh
  python manage.py loaddata db.json
  ```
 
-5. Запустите:
+6. Запустите:
   ```sh
  python manage.py runserver 0.0.0.0:8000
  ```
